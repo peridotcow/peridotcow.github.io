@@ -35,7 +35,7 @@ def update_readme(username, authtoken, image_filenames)
   content = "# VTT Maps\n"
 
   for filename in image_filenames:
-    content += f"![{filename}](filename)\n"
+    content += f"<img src='{filename}' height="200"> https://peridotcow.github.io/{filename} <br>\n"
   
   # Update README.md
   repo.update_file("README.md", "update maps list", content, file.sha)
