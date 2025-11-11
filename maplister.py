@@ -32,7 +32,7 @@ def update_readme(username, authtoken, image_filenames)
   file = repo.get_contents("README.md")
   
   # The new contents of your README.md
-  content = "# VTT Maps\n"
+  content = "# VTT Maps\nThese maps are sourced from their creators on patreon\n"
 
   for filename in image_filenames:
     content += f"<img src='{filename}' height="200"> https://peridotcow.github.io/{filename} <br>\n"
