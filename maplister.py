@@ -23,12 +23,12 @@ def get_maps_list(directory_path):
 def update_readme(image_filenames):
   
   with open("README.md", "w") as file:
-    file.write("# VTT Maps\nThese maps are sourced from their creators on patreon")
+    file.write("# VTT Maps\nThese maps are sourced from their creators on patreon\n")
     file.write("<br>")
     counter = 0
     for filename in image_filenames:
         if counter >= 5:
-           file.write("<br>")
+           file.write("<br>\n")
            counter = 0
         else:
            counter+=1
