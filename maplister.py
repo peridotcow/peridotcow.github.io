@@ -27,14 +27,14 @@ def update_readme(image_filenames):
     file.write("<br>")
     counter = 0
     for filename in image_filenames:
-        if counter >= 5:
-           file.write("<br>\n")
+        file.write(f"<img src='maps/{filename}' height='200'>")
+        if counter >= 4:
+           file.write("\n<br>")
            counter = 0
         else:
-           counter+=1
-        file.write(f"<img src='maps/{filename}' height='200'>")
+           counter += 1
   
-image_dir = 'maps' # Replace with your directory path
+image_dir = 'maps'
 filenames = get_maps_list(image_dir)
 
 update_readme(filenames)
