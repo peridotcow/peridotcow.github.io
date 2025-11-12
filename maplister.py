@@ -23,10 +23,10 @@ def get_maps_list(directory_path):
 def update_readme(image_filenames):
   
   with open("README.md", "w") as file:
-    file.write("# VTT Maps\nThese maps are sourced from their creators on patreon\n")
+    file.write("# VTT Maps\nThese maps are sourced from their creators on patreon")
 
     for filename in image_filenames:
-        file.write(f"<img src='maps/{filename}' height='200'>\n")
+        file.write(f"<br><img src='maps/{filename}' height='200'>")
   
 image_dir = 'maps' # Replace with your directory path
 filenames = get_maps_list(image_dir)
