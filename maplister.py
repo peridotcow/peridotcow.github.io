@@ -27,7 +27,7 @@ def update_readme(image_filenames):
     file.write("<br>")
     counter = 0
     for filename in image_filenames:
-        file.write(f"<img src='maps/{filename}' height='200'>")
+        file.write(f"<img src='maps/{filename}' width='100'>")
         if counter >= 4:
            file.write("\n<br>")
            counter = 0
