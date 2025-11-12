@@ -1,8 +1,4 @@
 import os
-from github import Github
-
-image_dir = 'maps' # Replace with your directory path
-filenames = get_maps_list(image_dir)
 
 def get_maps_list(directory_path):
     """
@@ -24,19 +20,15 @@ def get_maps_list(directory_path):
                 image_filenames.append(filename)
     return image_filenames
   
-def update_readme(username, authtoken, image_filenames)
-  g = Github(username, authtoken)
+def update_readme(image_filenames):
   
-  # Find your repository and path of README.md
-  repo=g.get_user().get_repo("peridotcow.github.io")
-  file = repo.get_contents("README.md")
-  
-  # The new contents of your README.md
-  content = "# VTT Maps\nThese maps are sourced from their creators on patreon\n"
+  with open("README.md", "w") as file:
+    file.write("# VTT Maps\nThese maps are sourced from their creators on patreon\n")
 
-  for filename in image_filenames:
-    content += f"<img src='{filename}' height="200"> https://peridotcow.github.io/{filename} <br>\n"
+    for filename in image_filenames:
+        file.write(f"<img src='{filename}' height='200'>\n")
   
-  # Update README.md
-  repo.update_file("README.md", "update maps list", content, file.sha)
-    
+image_dir = 'maps' # Replace with your directory path
+filenames = get_maps_list(image_dir)
+
+update_readme(filenames)
