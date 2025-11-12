@@ -4,4 +4,3 @@ These maps are sourced from their creators on patreon
 <br><img src='maps/GL_FeyVillage_DayThrone.jpg' width='100'><img src='maps/GL_FeyVillage_MoonlightFey.jpg' width='100'><img src='maps/GL_FeyVillage_MoonPond.jpg' width='100'><img src='maps/GL_FeyVillage_NightGateFey.jpg' width='100'><img src='maps/GL_FeyVillage_OriginalFey.jpg' width='100'>
 <br><img src='maps/GL_FeyVillage_SunsetFey.jpg' width='100'><img src='maps/GL_FeyVillage_SwampFey.jpg' width='100'><img src='maps/GL_FeyVillage_ThreeGateFey.jpg' width='100'><img src='maps/GL_FeyVillage_UnicornDay.jpg' width='100'><img src='maps/GL_FeyVillage_UnicornDeadFey.jpg' width='100'>
 <br>
-![](/maps/Arctic_IcyLake.jpg)
